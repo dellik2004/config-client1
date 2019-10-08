@@ -9,4 +9,4 @@ applications:
   env:
     SPRING_PROFILES_ACTIVE: dev
   services:
-        - bms-config-server
+        - config-server
