@@ -1,0 +1,12 @@
+---
+applications:
+- name: quark12
+  host: quark12
+  memory: 1Gb
+  instances: 1
+  path: build/libs/quark-0.0.1-SNAPSHOT.jar
+  buildpack: java_buildpack_offline_latest
+  env:
+    SPRING_PROFILES_ACTIVE: dev
+  services:
+        - bms-config-server
